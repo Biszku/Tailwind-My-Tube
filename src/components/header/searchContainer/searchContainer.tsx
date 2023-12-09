@@ -37,7 +37,9 @@ const SearchContainer = () => {
               setFirstLoad(false);
             }}
           />
-          {!firstLoad && <FaKeyboard className="text-3xl" />}
+          {!firstLoad && (
+            <FaKeyboard className="text-3xl hover:cursor-pointer" />
+          )}
           {searchText.length > 0 && (
             <IoMdClose
               className="text-3xl hover:cursor-pointer"
@@ -48,11 +50,11 @@ const SearchContainer = () => {
             />
           )}
         </div>
-        <div className="flex items-center bg-zinc-800 rounded-r-full px-8">
-          <HiMagnifyingGlass className="text-4xl" />
+        <div className="flex items-center bg-zinc-800 rounded-r-full px-8 hover:cursor-pointer">
+          <HiMagnifyingGlass className="text-4xl " />
         </div>
       </div>
-      <div className="grid px-3 place-items-center self-stretch bg-zinc-800  rounded-full ">
+      <div className="grid px-3 place-items-center self-stretch bg-zinc-800  rounded-full hover:cursor-pointer ">
         <IoMdMic className="text-4xl" />
       </div>
     </div>
