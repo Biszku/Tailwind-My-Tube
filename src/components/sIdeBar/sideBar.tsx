@@ -1,7 +1,7 @@
 const Sidebar = () => {
   return (
     <aside className="bg-rose-500">
-      <p>112112</p>
+      <p>Side Bar</p>
     </aside>
   );
 };

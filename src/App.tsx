@@ -4,7 +4,7 @@ import Sidebar from "./components/sIdeBar/sideBar";
 
 const App = () => {
   return (
-    <div className="bg-black grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
+    <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
       <Header />
       <Sidebar />
       <MainContainer />
