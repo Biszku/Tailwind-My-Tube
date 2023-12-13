@@ -13,3 +13,11 @@
 html {
   font-size: 62.5%;
 }
+
+.primary-bg {
+  background-color: rgb(15, 15, 15);
+}
+
+.aside-top {
+  top: 52px;
+}
