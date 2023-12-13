@@ -50,7 +50,7 @@ const SearchContainer = () => {
             />
           )}
         </div>
-        <div className="flex items-center bg-zinc-800 rounded-r-full px-8 hover:cursor-pointer">
+        <div className="flex items-center bg-zinc-800 rounded-r-full px-8 hover:cursor-pointer border border-gray-700">
           <HiMagnifyingGlass className="text-4xl " />
         </div>
       </div>
