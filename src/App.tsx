@@ -4,10 +4,12 @@ import Sidebar from "./components/sIdeBar/sideBar";
 
 const App = () => {
   return (
-    <div className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto]">
+    <div className="flex flex-col primary-bg">
       <Header />
-      <Sidebar />
-      <MainContainer />
+      <main className="flex">
+        <Sidebar />
+        <MainContainer />
+      </main>
     </div>
   );
 };
