@@ -1,8 +1,11 @@
+import MainContentNav from "./mainContentNav/mainContentNav";
+
 const MainContainer = () => {
   return (
-    <main className="bg-rose-500">
+    <section className="flex-1">
+      <MainContentNav />
       <p>Main Content</p>
-    </main>
+    </section>
   );
 };
 
