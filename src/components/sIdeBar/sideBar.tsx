@@ -1,6 +1,6 @@
 const Sidebar = () => {
   return (
-    <aside className="bg-rose-500">
+    <aside className="sticky aside-top bg-red-600">
       <p>Side Bar</p>
     </aside>
   );
