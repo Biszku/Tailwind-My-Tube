@@ -10,17 +10,17 @@ const SearchContainer = () => {
   const [searchText, setSearchText] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   return (
-    <div className="w-1/3 flex items-center justify-end gap-6 text-white py-3">
+    <div className="w-[35.2%] flex items-center justify-end gap-6 text-white py-3">
       <div className="flex flex-1">
         <div
           className={`flex flex-1 items-center border-t border-b border-l  ${
-            isActive ? "border-blue-500 border-r" : "border-gray-700"
-          } rounded-l-full py-3 pl-6 pr-4 gap-1`}
+            isActive ? "border-blue-500 border-r" : "border-[#222]"
+          } rounded-l-full py-[0.7rem] pl-6 pr-4 gap-1`}
         >
           {isActive && <HiMagnifyingGlass className="text-3xl mr-4" />}
           <input
             ref={inputRef}
-            className="flex-1 outline-none text-2xl bg-transparent "
+            className="flex-1 outline-none text-[1.55rem]  bg-transparent placeholder:text-[#a0a0a0]"
             type="text"
             placeholder="Szukaj"
             value={searchText}
@@ -38,11 +38,11 @@ const SearchContainer = () => {
             }}
           />
           {!firstLoad && (
-            <FaKeyboard className="text-3xl hover:cursor-pointer" />
+            <FaKeyboard className="text-3xl text-[#a0a0a0] hover:cursor-pointer" />
           )}
           {searchText.length > 0 && (
             <IoMdClose
-              className="text-3xl hover:cursor-pointer"
+              className="text-3xl text-[#a0a0a0] hover:cursor-pointer"
               onClick={() => {
                 setSearchText("");
                 inputRef.current && inputRef.current.focus();
@@ -50,7 +50,7 @@ const SearchContainer = () => {
             />
           )}
         </div>
-        <div className="flex items-center bg-zinc-800 rounded-r-full px-8 hover:cursor-pointer border border-gray-700">
+        <div className="flex items-center bg-zinc-800 rounded-r-full px-8 hover:cursor-pointer border border-[#222]">
           <HiMagnifyingGlass className="text-4xl " />
         </div>
       </div>
