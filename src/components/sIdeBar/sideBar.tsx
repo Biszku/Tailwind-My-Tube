@@ -1,6 +1,6 @@
 const Sidebar = () => {
   return (
-    <aside className="sticky aside-top bg-red-600">
+    <aside className="asideElementWidth  sticky top-[56px] text-white">
       <p>Side Bar</p>
     </aside>
   );
