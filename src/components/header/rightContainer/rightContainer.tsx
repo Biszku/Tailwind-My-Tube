@@ -3,10 +3,14 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 
 const RigthContainer = () => {
   return (
-    <div className="text-white flex items-center">
+    <div className="text-white flex items-center gap-[2.9rem]">
       <BsCameraVideo className="text-4xl" />
       <IoMdNotificationsOutline className="text-4xl" />
-      <img className="w-12 h-auto" src="/public/avatar.jpg" alt="profile" />
+      <img
+        className="w-12 h-auto rounded-full"
+        src="/public/avatar.jpg"
+        alt="profile"
+      />
     </div>
   );
 };
