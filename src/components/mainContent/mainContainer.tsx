@@ -4,7 +4,9 @@ const MainContainer = () => {
   return (
     <section className="flex-1">
       <MainContentNav />
-      <p className="h-[1000vh]">Main Content</p>
+      <div className="h-[1000vh] ">
+        <p className="text-white">Main Content</p>
+      </div>
     </section>
   );
 };
