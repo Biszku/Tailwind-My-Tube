@@ -4,7 +4,7 @@ import SearchContainer from "./searchContainer/searchContainer";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 flex items-center justify-between col-span-2 px-[2.8rem] ">
+    <header className="bg-[#0f0f0f] sticky top-0 z-1 flex items-center justify-between col-span-2 px-[2.8rem] ">
       <LogoContainer />
       <SearchContainer />
       <RigthContainer />
