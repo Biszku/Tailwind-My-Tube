@@ -22,7 +22,7 @@ const SearchContainer = () => {
             ref={inputRef}
             className="flex-1 outline-none text-[1.55rem]  bg-transparent placeholder:text-[#a0a0a0]"
             type="text"
-            placeholder="Szukaj"
+            placeholder="Search"
             value={searchText}
             onChange={(e) => {
               setSearchText(e.target.value);
