@@ -1,23 +1,35 @@
+import { useState } from "react";
+
 const MainContentNav = () => {
+  const [activeFilter, setActiveFilter] = useState(0);
   const tabArr = [
-    "Wszystko",
-    "Gry",
-    "Na żywo",
-    "Muzyka",
-    "Playlisty Youtube Mix",
-    "Przygodowe gry akcji",
-    "Rapowanie",
-    "Gotowanie",
-    "Ostatnio przesłane",
-    "Obejrzane",
-    "Nowe rekomendacje",
+    "All",
+    "Music",
+    "Gaming",
+    "Live",
+    "News",
+    "Cooking shows",
+    "Action adventure games",
+    "Cooking",
+    "Recently uploaded",
   ];
   return (
-    <div className="flex">
-      {tabArr.map((name) => {
+    <div className="bg-[#0f0f0f] sticky top-[54.25px] z-1 flex gap-[1rem] overflow-auto  pt-[1.4rem] pb-[1.4rem]">
+      {tabArr.map((name, index) => {
         return (
-          <div className="">
-            <span className="text-white">{name}</span>
+          <div
+            className={`${
+              index === activeFilter ? "bg-[#f1f1f1]" : "bg-[#272727]"
+            } min-w-max rounded-[0.8rem] px-[1rem] py-[0.5rem] hover:cursor-pointer`}
+            onClick={() => setActiveFilter(index)}
+          >
+            <span
+              className={`${
+                index === activeFilter ? "text-[#272727]" : "text-[#f1f1f1]"
+              } text-[1.4rem] font-bold `}
+            >
+              {name}
+            </span>
           </div>
         );
       })}
