@@ -12,9 +12,29 @@ const MainContentNav = () => {
     "Action adventure games",
     "Cooking",
     "Recently uploaded",
+
+    "All",
+    "Music",
+    "Gaming",
+    "Live",
+    "News",
+    "Cooking shows",
+    "Action adventure games",
+    "Cooking",
+    "Recently uploaded",
+
+    "All",
+    "Music",
+    "Gaming",
+    "Live",
+    "News",
+    "Cooking shows",
+    "Action adventure games",
+    "Cooking",
+    "Recently uploaded",
   ];
   return (
-    <div className="bg-[#0f0f0f] sticky top-[54.25px] z-1 flex gap-[1rem] overflow-auto  pt-[1.4rem] pb-[1.4rem]">
+    <div className="w-[100%] bg-[#0f0f0f] sticky top-[54.25px] z-1 flex gap-[1rem] overflow-x-auto  pt-[1.4rem] pb-[1.4rem]">
       {tabArr.map((name, index) => {
         return (
           <div
