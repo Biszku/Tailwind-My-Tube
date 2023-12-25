@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 
 const MainContentNav = () => {
-  const navigationRef = useRef<HTMLDivElement>(null);
+  const navigationRef = useRef<HTMLUListElement>(null);
   const [leftValue, setLeftValue] = useState(0);
   const [activeFilter, setActiveFilter] = useState(0);
   const tabArr = [
@@ -66,7 +66,7 @@ const MainContentNav = () => {
 
       <div className="h-[31px]"></div>
 
-      <div
+      <ul
         ref={navigationRef}
         className={`absolute left-0 top-[50%] translate-y-[-50%] transition-all max-w-max flex gap-[1rem]`}
         style={{
@@ -81,7 +81,7 @@ const MainContentNav = () => {
               ? firstElement
               : null;
           return (
-            <div
+            <li
               key={index}
               ref={elementRef}
               className={`${
@@ -96,10 +96,10 @@ const MainContentNav = () => {
               >
                 {name}
               </span>
-            </div>
+            </li>
           );
         })}
-      </div>
+      </ul>
 
       {!lastElementVisible && (
         <div
